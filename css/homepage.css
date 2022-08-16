@@ -32,8 +32,10 @@
      left: 0;
  }
  
+ /* --- Homepage EV Search Autocomplete --- */
+
  .autoComplete_wrapper>ul {
- 
+      overflow: visible ! important;
  }
  
  .autoComplete_wrapper>ul>li {
