@@ -37,6 +37,7 @@ EVSearch.initAutocompleteConfiguration = function() {
 
     var autoCompleteConfig = {
         
+        selector: '#evSearchAutoComplete',
         placeHolder: "חפש רכב חשמלי...",
         threshold: 0,
         searchEngine: "loose",
@@ -71,9 +72,11 @@ EVSearch.initAutocompleteConfiguration = function() {
 }
 
 addEventListener('load', (event) => {
-    // Initialize the autocomplete for the EV search on the homepage.
-    EVSearch.autoCompleteField = new autoComplete(
-        EVSearch.initAutocompleteConfiguration()
-    );
+    if (jQuery('#evSearchAutoComplete').length) {
+        // Initialize the autocomplete for the EV search on the homepage.
+        EVSearch.autoCompleteField = new autoComplete(
+            EVSearch.initAutocompleteConfiguration()
+        );
+    }
 });
 
