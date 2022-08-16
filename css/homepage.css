@@ -58,7 +58,14 @@
      opacity: initial ! important;
  }
  
- /* Remove unnecessary margins in the toolbox */
+
+ /* Remove unnecessary margins and paddings in the toolbox */
+ .home-toolbox-section {
+    margin: 0;
+    padding: 0;
+ }
+ 
  .home-toolbox-section .mag-box {
     margin: 0;
+    padding: 0;
  }
