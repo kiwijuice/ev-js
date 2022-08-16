@@ -37,7 +37,7 @@
  /* --- Homepage EV Search Autocomplete --- */
 
  .autoComplete_wrapper>ul {
-
+    z-index: 999;
  }
  
  .autoComplete_wrapper>ul>li {
@@ -72,4 +72,3 @@
     padding-top: 10px;
     padding-bottom: 10px;
  }
- 
