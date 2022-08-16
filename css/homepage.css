@@ -1,0 +1,57 @@
+.magazine2 .home-header .mag-box {
+    margin-bottom: 0px;
+ }
+ 
+ .magazine2 .home-header .container {
+     padding-left: 0px;
+     padding-right: 0px;
+ }
+ 
+ .mag-box-title h3 {
+     font-size: 2em ! important;
+     color: #000;
+ }
+ 
+ html #tie-body .mag-box-title h3 a,
+ .home-header .magazine2 .mag-box {
+     margin-bottom: 0px ! important;
+     color: #000;
+ }
+ 
+ html #tie-body .block-more-button {
+     color: #000;
+ }
+ 
+ .block-head-3 .the-global-title:after {
+     content: "";
+     background: #27292d;
+     width: 100%;
+     height: 2px;
+     position: absolute;
+     bottom: -1px;
+     left: 0;
+ }
+ 
+ .autoComplete_wrapper>ul {
+ 
+ }
+ 
+ .autoComplete_wrapper>ul>li {
+     text-align: right ! important;
+ }
+ 
+ .autoComplete_wrapper>ul>li mark {
+     padding: 0 ! important;
+ }
+ 
+ .home-toolbox-section .section-item {
+     overflow: visible ! important;
+ }
+ .magazine2 .container-wrapper {
+     /* opacity: initial ! important; */
+ }
+ .latest-news .container-wrapper {
+     opacity: initial ! important;
+ }
+ 
+ 
