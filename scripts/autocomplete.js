@@ -54,4 +54,7 @@ var autoCompleteConfig = {
     }
 };
 
-var autoCompleteJS = new autoComplete( autoCompleteConfig );
+addEventListener('load', (event) => {
+    var autoCompleteJS = new autoComplete( autoCompleteConfig );
+});
+
