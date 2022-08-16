@@ -1,6 +1,4 @@
 
-console.log('Loaded 2');
-
 var carData = {};
 carData["DS 3 E-Tense"] = "https://www.evm.co.il/ds3-e-tense-crossback-in-israel/";
 carData["אאודי e-tron"] = "https://www.evm.co.il/audi-e-tron-suv/";
@@ -33,31 +31,39 @@ carData["פיגו e208"] = "https://www.evm.co.il/peugeot-e-208/";
 carData["קיה נירו EV"] = "https://www.evm.co.il/kia-e-niro-in-israel/";
 
 var autoCompleteConfig = {
+    
     placeHolder: "חפש רכב חשמלי...",
     threshold: 0,
     searchEngine: "loose",
+
     data: {
         src: Object.keys(carData)
     },
+
     resultItem: {
         highlight: true,
     },
+
     query: (input) => {
+        // When searching items, ignore apostrophes
         return input.replace("׳", "").replace("'", "");
     },
+
     events: {
         input: {
             selection: (event) => {
                 const selection = event.detail.selection.value;
                 autoCompleteJS.input.value = selection;
+
+                const redirectLink = carData[selection];
+                console.log(redirectLink);
             }
         }
     }
 };
-console.log(autoCompleteConfig);
 
 addEventListener('load', (event) => {
-    console.log('load event');
-    var autoCompleteJS = new autoComplete( autoCompleteConfig );
+    // Initialize the autocomplete for the EV search on the homepage.
+    new autoComplete(autoCompleteConfig);
 });
 
