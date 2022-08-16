@@ -60,12 +60,10 @@
  
 
  /* Remove unnecessary margins and paddings in the toolbox */
- .home-toolbox-section {
-    margin: 0;
-    padding: 0;
- }
- 
- .home-toolbox-section .mag-box {
+ .home-toolbox-section,
+ .home-toolbox-section .section-item,
+ .home-toolbox-section .section-item .mag-box
+  {
     margin: 0;
     padding: 0;
  }
