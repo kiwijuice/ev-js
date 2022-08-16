@@ -31,6 +31,7 @@ carData["סקודה אניאק"] = "https://www.evm.co.il/skoda-enyaq/";
 carData["פיגו e2008"] = "https://www.evm.co.il/peugeot-e-2008/";
 carData["פיגו e208"] = "https://www.evm.co.il/peugeot-e-208/";
 carData["קיה נירו EV"] = "https://www.evm.co.il/kia-e-niro-in-israel/";
+
 var autoCompleteConfig = {
     placeHolder: "חפש רכב חשמלי...",
     threshold: 0,
@@ -53,8 +54,10 @@ var autoCompleteConfig = {
         }
     }
 };
+console.log(autoCompleteConfig);
 
 addEventListener('load', (event) => {
+    console.log('load event');
     var autoCompleteJS = new autoComplete( autoCompleteConfig );
 });
 
