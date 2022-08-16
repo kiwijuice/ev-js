@@ -1,5 +1,7 @@
 
-var carData = {};
+let evSearchAutocomplete;
+
+let carData = {};
 carData["DS 3 E-Tense"] = "https://www.evm.co.il/ds3-e-tense-crossback-in-israel/";
 carData["אאודי e-tron"] = "https://www.evm.co.il/audi-e-tron-suv/";
 carData["אאודי Q4"] = "https://www.evm.co.il/audi-q4-e-tron-in-israel/";
@@ -53,7 +55,7 @@ var autoCompleteConfig = {
         input: {
             selection: (event) => {
                 const selection = event.detail.selection.value;
-                autoCompleteJS.input.value = selection;
+                evSearchAutocomplete.input.value = selection;
 
                 const redirectLink = carData[selection];
                 console.log(redirectLink);
@@ -64,6 +66,6 @@ var autoCompleteConfig = {
 
 addEventListener('load', (event) => {
     // Initialize the autocomplete for the EV search on the homepage.
-    new autoComplete(autoCompleteConfig);
+    evSearchAutocomplete = new autoComplete(autoCompleteConfig);
 });
 
