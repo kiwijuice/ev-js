@@ -1,3 +1,4 @@
-# ev-js
+# EV Autocomplete Search
 
-JavaScript, CSS and static resources for EV Magazine. Deployed on Heroku.
+This repository holds the code for a lightweight and fast autocomplete functionality tailored for searching Electric Vehicles model pages (EVs).
+
