@@ -1,5 +1,6 @@
 window.EVSearch = {};
 
+
 /**
  * The autocomplete object represent the EV search field.
  */
