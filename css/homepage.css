@@ -36,6 +36,10 @@
  
  /* --- Homepage EV Search Autocomplete --- */
 
+ .autoComplete_wrapper input {
+     border: solid 1px #15b131 ! important;
+ }
+
  .autoComplete_wrapper>ul {
     z-index: 999;
  }
