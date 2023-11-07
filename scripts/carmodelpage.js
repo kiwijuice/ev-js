@@ -9,7 +9,7 @@ addEventListener('load', (event) => {
         heading.attr('id', headingId);
         titles.push([ heading.text().replace(/[\n\t]+/g, ''),  headingId]);
     });
-
+    console.log(titles);
     let toc = jQuery('#model-page-toc ul');
     titles.forEach((title) => {
         toc.append(jQuery('<li></li>').text(title[0]));
